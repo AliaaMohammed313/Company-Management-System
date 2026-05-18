@@ -390,3 +390,8 @@ SELECT
 FROM Employee
 
 GROUP BY Dep_id;
+
+ALTER TABLE Employee
+ADD CONSTRAINT chk_gender CHECK (Gender IN ('Male', 'Female'));
+
+
